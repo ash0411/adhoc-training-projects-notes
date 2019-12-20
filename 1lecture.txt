@@ -1,0 +1,22 @@
+kernel interacts with hardware.
+kernel understands only machine level language
+compiler connects the hll or software with kernel as kernel does't understand human language.
+os is a combination of softwares, kernel and compilers.
+kernel has 3 parts
+1. NT 2. linux 3. darwin 
+1 by microsoft 2 oss 3. apple 
+1. it will only understand software built in .exe
+job of exe is to retranslate/ restructure according to the os. it is a software architecture.converting to exe helps in reducing the dependence of language.
+3. kernel darwin it accepts .dmg .
+examples osx and snow
+2. linux it is divided into 2 differnt formats
+1.rpm 2 .deb   (it can also be said to have 2 software flavors)
+1 red hat package management
+2 debian
+1 red hat	fedora	 contos 	cloud linux 	opensuse  
+2 ubuntu	 debian		kali/blackarch 	 mint
+like microsoft redhat is also a company.Taken over by IBM BY 34 billion dollars
+the os by redhat is called RHEL(red hat enterprise linux).
+RHEL 8(red hat certifies system administration
+reason of using terminal  - 	
+
