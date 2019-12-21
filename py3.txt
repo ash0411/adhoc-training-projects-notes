@@ -1,0 +1,12 @@
+git starting 
+if echo $? gives 0 then the command is successfully run else not run successfully 
+so if exit code is 0 it is a success else failure
+slashreboot// problem statements of different technologies
+difference between for and while 
+	in while if the condition  is empty then it will not run but for it will be infininte loop 
+	for was never a loop it was just doing something in some iteration .
+if you give a line to for than it will take each line as one iteration .
+but as it can think that file.txt is a file so if you want to recognise file.txt as a file 
+					echo "my time is `date`"(`` to recognise it as a program)
+					for i in `cat file.txt ` do echo $i done 
+					  
