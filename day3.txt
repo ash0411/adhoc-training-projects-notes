@@ -17,7 +17,7 @@ yes and then  type the password
 pinky se check how many are connected
 //windows 10 has ssh command in terminal 
 today we have a new directory sturcture called 
-cat /etc/os-release(to get information regarding system)
+cat /etc/os-release(concatinate files and give their information regarding system)
 					SHELL
 everything we type in os is executed by kernel and kernel supports binary language . so the program b/w kernel and user called interpreter, but this is exactly shell. In different os we have different shell mac has sh shell, microsoft uses power shell, redhat is configured with bash.powershell is not oss execpt that you will be able to use every shell. 
 how to check shell :- bash language is bash . 
@@ -32,7 +32,7 @@ the program called env it gives all variable given by you and the system by the 
 if we give a value to kernel which is not in the system for a long time it leads to kernel panic so the shell first check what the user has given and tells the user whether the shell has it or not. but as the hardisk is very long so we give kernel a path which tells the kernel from where you have to check from . 
 mv /usr/bin/date /etc ( it moves usr/bin/date to /etc)
 to set path variable
-PATH = $PATH:/root/Desktop (to add temporary)(here appending the path)
+PATH=$PATH:/root/Desktop (to add temporary)(here appending the path)(dont give gaps in between =)
 ls -a (to see hidden file)
 useradd user ( to add user)
 su - ash( to switch user)

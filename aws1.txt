@@ -1,0 +1,23 @@
+cloud technology talks about how cloud is deployed it talks about the backend, the services the cloud offers and the users using is using on demand .
+cloud computing is a term for technology .
+differnce b/w cloud computing and cloud technology 
+
+how many types of cloud 
+1 public 2 private 3 hybrid 4 community
+1 public :- azure ,aws , googlecloud 
+2 . openstack  
+3.  it has 2 parts 
+public connectivity and private connectivity 
+some company don't want to put there data on cloud as its hackable so they use hybrid some part on private and some on public but its costly (mainly the private one)
+4 . if we want to connect all the branches of a particular company to use the same cloud although it seems like private but its public as the whole company is using the particular cloud. it is more costly than hybrid cloud. 
+cloud provide 3 services 
+1 infrastructure as a service 
+2 software as a service 
+3 platform as a service
+(these are basic services)
+apart from then there are more like network container storage  and they have there own shortform (>>)
+virtualization collects resources and create virtual enviornment in between them . the virtual enviornment is made by using hyperviser . it is a tool/software/hos .It is of 2 types 1 . type 1(bare metal) and type2 (hosted hypervisor)
+type 2 hypervisor:-
+eg virtual machine  
+the operating system is already using ram but if we make a vm in virtual box and give it 2 gb ram , then it uses it dynamically ie if we use 1 gb than only 1 gb will be used but we can't use ram more than 2 gb ram.
+hypervisor basically uses the resource that we use  
