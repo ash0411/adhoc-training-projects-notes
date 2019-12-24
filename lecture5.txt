@@ -1,0 +1,30 @@
+nowdays we have installer that install the software .
+the program which install the software when we install a software is called installer
+									os      installer
+									redhat - yum/dnf
+									windows - msi/appstore
+									ubuntu -   apt 
+									mac  -    brew
+									python -   pip
+									ruby   -   gem 
+chmod g+rw hello.txt ( for group access)
+chmod g+a hello.txt(for owner)
+4,2,1(read,write,execute)
+chmod 761 hello.txt
+//to make just 1 user not able to access a file 
+getfacl hello.txt(will tell the access of different user)
+setfacl -m u:adhoc:---(to give no permission to adhoc)
+how to make a group
+groupadd hello 
+useradd a
+/etc/passwd(for seeing information for users)
+/etc/shadow(it stores information related to password)
+/etc/group(for seeing information related to groups)
+cntl+s ( off visual system )
+cntl +q ( on visual system)
+cbh\(it is boot storage )
+fdisk -l ( to check the disk and volume attached to the disk)
+The name inside is changed because it is virtual 
+if your key is removed and the instance is running(
+snapshot is the copy of a particular volume
+what is the use of process without key pair in aws 
