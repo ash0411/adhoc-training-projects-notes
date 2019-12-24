@@ -1,0 +1,21 @@
+SCM 
+ we have git which is distributed version control system 
+ all other source code management system are centralised .
+ distributed means you can take the repo and can manage according to your conviniance .
+when multiple developer code according to their own compability and can contrivute it from their own compability
+a version control initaited by a person but anybody can clone that 
+but if i like voth the code and there is conflict in both the ideas and there can be conflict . so you can make another branches and merge them 
+there are 2 parts server and client 
+we are client and the place where a repository is hosted is called a hub/server.
+the process we can do from hub is 1. clone 2. to make both the data equivalent we can use pull/ fetch it will compare the code of both the pc and pull it from the pc. 
+clone gives the code along with history .if you have more data you can push and if the hub has more data  we can pull.
+there are 2 things you can work for yourself or you can contribute
+eg . you want to contribute to docker. so you can clone any of their repo after analysis. 
+first you will clone their repo . 
+2. case to create your own repo . 
+if you want to add you can just do git add . git commit -m "" git push 
+git status will tell the changges you have untracked file will tell the file that git is not aware of .
+to push a particular file you can just do git add filename
+commit will save the changes pemanently .
+
+

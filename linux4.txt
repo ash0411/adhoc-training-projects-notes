@@ -1,0 +1,29 @@
+the default output given in a command is called standard input
+eg date command gives the date if it gives something else it is not standard output
+io redirection :- if in linux you want to redirect a standard output to a file than the command is  date >a.txt
+it first find its directory and checks for the file otherwise it creates the file and stores it
+but whenever we run it overwrites so to make append we write date >>a.txt
+if we write a call >>a.txt in terminal it will generate an error which will show in terminal and not store in the file
+$? exit code
+if you want to redirect error in a file  datiii 2>>a.txt
+datiii &>>a.txt
+if we write a command which has no output ie cat >> a.txt than it will send a null value in its place 
+here we didn't get an exit code because we didn't give an argument
+pipelining eg cat b.txt|date >>b.txt it first runs cat b.txt and then date >>b.txt
+cat a.txt | grep -i hello (i is for input for grep )it will highlight the hello in the file a.txt
+archives :- to keep a content(which is not used now but could be used in the near future) in a place that is not in our immediate need.
+exchange server is the main server for microsoft 
+yes command gives the repeated output string or y
+wc to find the number of characters
+head command shows 10 lines from begning
+tail command shows 10 lines from end 
+task to show 5 to 15 lines of a  file   head a.txt [5:15]
+compress means to make a content small ( it stores the meta data of the file and stores its size)
+.tar file  extension for compressed file 
+here we have gzip as compared to windows zip
+if we want to compress a.txt than (tar -cvzf new.gzip.tar a.txt)-c for create -v for verbose  -z for gzip -f for file name
+To extract a tar file (tar -xvf new.gzip.tar)
+to extract just one file of the 2 in the tar file(task)
+tar file doesn't effect when we remove -
+in cd .. (every folder has a . and .. than when cd runs it goes the directory of ..)
+every user level command is put in /bin and in /sbin there are administrator level commands 

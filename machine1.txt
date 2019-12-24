@@ -1,0 +1,12 @@
+data science has a lot of branches 
+1. data analytics ( without programming they do data visualization)
+2. big data hadoop( whenever you have large amount of data which can't be handled by the software or os)
+3. AI( it decides what you mean by the data )
+supervised machine learning :-
+			if you have an exam for ting tong. what would be the first questions ?
+			you will search the source of information. 
+unsuperised is not about training and testing but it is about clustring .
+			
+reinforcement is about game augumentation (where there is not always the same option )
+ 
+			
