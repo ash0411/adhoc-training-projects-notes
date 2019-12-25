@@ -1,0 +1,8 @@
+                         data handling 
+data formats 
+csv  pdf xls json xml img 
+every of these data is saved in numeric form
+initially matlab to be used in python you have to explore 4 llibraries
+(numpy matplotlib scipy and pandas) - data handling
+
+
