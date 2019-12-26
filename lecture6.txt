@@ -1,0 +1,67 @@
+rpm -q (for configration in redhat)
+linux has default python 2.7 because it is for os  in linux
+yam installs package as well as all the dependencies in it 
+all the info is in rpm
+yum install httpd( package of apache server)
+without repo file get/yum will not be created
+baseurl is the url where get will go and take the package
+every package has a key which tells a package is harmful or not (gpgkey)
+yum repolist
+yum clean all(to clean)
+yam reinstall( to reinstall a package)
+yum provides( if you know the command and you don't know from which package it came)
+in ubuntu we don't have to make repo 
+this difference is because redhat is enterprise version because in company we can't install the whole package  because if we install the whole package because it may have a command like rm -f which may blow up the whole server
+
+
+
+
+
+if apache server connects mainly 2 things happen - 1. user:- the user takes the request to the apache page . if we put access control(acl) over apache user than side will stop functioning as apache user has lost read access.
+
+
+serveradmin is the host
+the directory tells any other user has no access to httpd they only have the access of reading the file
+the documentrootis the path where we put the file(  if the index.html is not in file path than it will not run)
+read the configration file
+directory index gives the default page
+if you update something in apache than you have to restart apache file (written in copy)
+if you want to host 2 siter in apache (virtual hosting)
+go to configration file
+below IncludeOptional conf.d/*.conf
+< VirtualHost *:80>
+Documentroot /var/www/html/web1/
+servername www.xyx.com 
+</VirtaulHost>
+
+after this
+
+mkdir /var/www/server
+vim /var/www/server/index.html
+in the file
+hi every one this is a webpage
+
+after this systemctl restart httpd
+
+vim etc/hosts (here we are defining our own host as we have not urchased the dns)
+yourpublicip www.adhoc.com
+vim /etc/hosts
+(enter your ip and domain name)
+//////////////////////////////////////////////////////////////////////
+for our own yo can write curl www.adhoc.com
+eg go daddy gave domain name and it didn't give ip but domain name and hosted 1000 of sites in it
+vim etc/hosts
+3.133.106.53 www.xyz.com ( it tells the server to go from which domain name to with ip file
+(not working check why not working)
+load balancer( to not let the site down)
+in aws called edb
+whatever instances are in load balancer it checks there health , if healthy it sends otherwise it asks the user to wait
+autoscale is also used ( here if the request are less than there it sends to 1 instance else it sends to the other instance
+dos attack (in this we send a lot of request to a particular site to get it down
+router 53 ( domain redirection)(if there is a request here it redirects it to another ip) 
+task 2-3 virtual hosting
+//////////////////////////////////////////
+history( in phone)
+note :- as public ip change everytime you restart the instance you have to change the enteries of public ip 
+ 	
+ 
