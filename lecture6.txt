@@ -6,8 +6,8 @@ yum install httpd( package of apache server)
 without repo file get/yum will not be created
 baseurl is the url where get will go and take the package
 every package has a key which tells a package is harmful or not (gpgkey)
-yum repolist
-yum clean all(to clean)
+yum repolist(to read all repo present in your system)
+yum clean all(to clean caches )
 yam reinstall( to reinstall a package)
 yum provides( if you know the command and you don't know from which package it came)
 in ubuntu we don't have to make repo 

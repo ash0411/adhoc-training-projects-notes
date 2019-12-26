@@ -1,0 +1,60 @@
+													how to set path in windows
+you can also use windows powershell (some commands of linux also work here)
+go to my computer properties and advance system settings and there set enviornment variables
+go to user/path and there add a path(you can also try to restart 
+in python3 there is scripts and there it is pip so set the path of both python3 and pip 
+//////////////////////////////////////////////////////////////////////////////////////////////
+aws 
+													PARTITIONS
+partitions has a limit which depends on tables
+there are 2 gpt(guid partition table)(windows)(128 partitions) and mbr/dos(linux/unix)(master board record)(4 where all 4 partitions are primary)(can get 60 logical partitions(extended))- in this 3 primary and 1 extended)
+hdd consists of sectors and 1 sector has sizeof 512 bytes. 
+hdd -> aws
+fdisk -l(to show details of storage)  
+fdisk .dev.xvda
+make the 3 partitions and give the rest of the space to the 4 extended partitions
+partitions are made with null type point value
+
+ 
+why do we format 
+it makes a new index  for the folder and if you have not put new data into the folder than you can recover the data
+windows uses ntfs and redhat uses xfs to format .
+fat has architecture of not transferring more than 4 gb so it can't transfer file more than 4 gb
+from null the harddisk gets file system so as you have made partition you have to first format 
+mkfs.xfs /dev/xvdb(for format)(/dev has all the drives)
+double tab gives possiblities and aws can't use it because aws doesn;t have base completion
+xvdb file is linked to a directory and this process is called mounting process(hdw -os ke beech link )
+mount xvdv19 ( /mnt temporary and /mount permanent)
+df ( for seeing linking)
+df -h (for humans)
+mount /dev/xvdb1/disk1/
+df -h( to check)
+mkdir /disk1/hii(this will make the file in disk1 which will make the directory getting saved in xvdb1
+mounting is basically a linking process which links from 1 place to another which is gone while reboot
+to permanently mount store the data in etc/fstab and this file should be in /etc
+but for storing you need uuid( it is standard) so use
+lsblk --output=uuid /dev/xvdb1( to get uuid which is only created when the file is formated)
+vim /etc/fstb
+uuid = ___________/disk1         xfs        defaults            0 0
+mount -a(to check if we have correctly done it)
+df
+extended partition is not formated because it will be used for making new sectors or it can be said partitions)
+
+lvm ----------------------
+logical volume - lvm is tech to manage harddisk 9 it is inside device mapper
+yum provide pvcreate
+yum install lvm2
+pvcreate /dev/xvdb2 /dev/xvdb3 /dev/xvdb5( first creating physical volume)
+vgcreate vgroup /dev/xvdb2 /dev/xvdb3 /dev/xvdb5 ( for merging them into a new group)
+vgdisplay(to check the info regarding group)
+lvcreate --name adhoc --size 1G vgroup 
+lvdisplay /dev/vgroup/adhoc
+vgdisplay vgroup
+mkfs /dev/vgroup/adhco /kk
+and then mount
+check how to retrieve data if a hard disk fails
+blkid ( it gives uuid of all)
+//////////////////////////////////////
+slashlinuxcode.blogspot.com
+54.166.189.131/datasets for datasets
+you can right click and copy link address of file 
