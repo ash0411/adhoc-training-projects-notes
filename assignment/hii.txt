@@ -1,0 +1,2 @@
+this is the first line \nthis is the first line of text
+i don't know why i am doing this
