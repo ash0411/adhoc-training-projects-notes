@@ -1,0 +1,42 @@
+first connecting to others computer through wifi
+first getting ip of the similiar connected wifi and then doing ping (wifi ip of the reciever) (maybe wifi will  connect)
+it is important to know the ip of reciever and not the sender
+code in sender.py
+//////////////////////////////////////////////////////////////////////
+services to acess others computer 
+ssh(secure shell) , rdb, telnet
+difference between telnet and ssh
+if we have 2 system ( connecting 2 system forms a session)
+the way the info goess in the session(if data is in plain text than easily accessible (telnet) in ssh encryption techniques are used they made some hash)
+types of encryption rsa amd dsa
+ssh used rsa 
+to install package openssh-server
+the service is called sshd where d is daemon ( to run a service there is a process called daemon
+systemctl restart sshd
+systemctl enable sshd
+systemctl status sshd
+rpm -qc openssh(to check configration file)
+cd /etc/ssh
+vim sshd_config 
+go to authentucation to lower to permitrootlogin ( if commented than we would not be able to access root
+ssh root@ipadressofremotemachine(eg 192.168.10.100)
+if you want to make a key in ssh - 
+ssh-keygen
+(to send it to remote machine it will ask for a password one time and after that you don't have to add password)ssh-copy-id 192.168.10.100
+task to key make and send and why it is not accessing
+////////////////////////////////////////////////////////////////////////
+simple storage service(S3)
+object storage(unstructured data) and block storage(structured data)
+s3 service is globally available (data is stored in a bucket, so first you create bucket)
+bucket name should be unique it allocated dynamically 5 gb free storage , allocated acc to name, name is there as it is globally )
+globally we can access it but the region is given to tell in which region it is going to be made)
+block public access( to restrict the bucket to be used publically)
+versioning(making new version of codes and able to go to previous version so if we make a mistake we can revert back to our previous code
+s3 is object storage where unstructured data is stored and static data is stored in unstructured data as dynamic requires sche,a whcich is not in unstructured data
+///////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+)
