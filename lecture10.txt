@@ -1,0 +1,29 @@
+sdlc (github)
+
+agile method was popular at some time
+devops is the best method for now ( it is actually a trend)
+if you want python based github projects just search that so if you want them you can just clone them modify them and them upload them to your github
+
+if you want to clone of a particular day
+git reset --hard (commit number)
+(final) commit 736ee33ba64f6d06b48a188a689ea3619ffb2b63
+(second) commit 0deaf96344fe12c3749e0c58682ff723836bc72b
+
+///////////////////DATA ANALYSIS //////////////////////////////////////
+basically doing web scraping
+the module being used is BeautifulSoup
+rules:-  if you are using google than your ip could be blocked ( you can't run your code more than 25 times) 
+so you either have to make developer account or you have to 
+<<X ( terminal comment)
+//////////////////////////////////////////
+subheading - to change newtork of same ip( read yourself)
+dhcp protocol is ip less protocol
+which does'nt change iis network  address and the changing part is host address
+b[c creates a lab in adhoc
+hostname - the name wiath the network is called host name or network name 
+nat gateway used to communicate between 2 subnets in a virtual private cloud
+internet gateway is used to communicate with outer source
+but for who to make it for so five subnet and also elastic ip allocation id and also you have to edit the thing in the route table
+for that nat gateway
+read vpc and watch youtube
+
