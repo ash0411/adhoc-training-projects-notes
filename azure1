@@ -1,0 +1,33 @@
+azure has 2 storage accounts 
+1. genereal purpose 2. blob storage account
+1. has 2 versions 1 and V2 
+V2 is updated and has more storage
+blob storage stores unstuctures data and works like S3 in amazon
+general has 4 types
+table(tables) queue(quiries) file(like samba) and blob(unstructured info)
+page blob contains image of operating system will blob blob contains snapshot
+hot means frequent access 
+blob storage has containers
+///general purpose ///
+it has 4 as given in the 4 types
+smp protocol in file sharing 
+create it open it and then connect then you can run the script to open it .
+cifs has package in client in samba
+after run it like you run samba
+install cifs
+touch {1..100}
+then it will update in the storage in azure
+\\ not about quiries ///
+the sms here will be linked to storage account
+/// table
+here we make tables in these we will get url which will connect to the sql 
+mysql -h (link)
+//////
+azure app fabric (web as a service) used to host site and the pages go on ftp 
+//////
+in loadbalancer there is only one type in azure
+make a elb and set load balancing rules which tells what port number are allowed
+if the instance is idle then it will ping to check and if there is any error then it will show error
+/////
+task aws 
+ search what is iam user and create a user make an s3 and bucket put a file and folder and make the user only access the folder and not the file

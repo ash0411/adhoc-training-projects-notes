@@ -10,19 +10,18 @@ s = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 
 while True:
 #this is for sender
-    msg = input("please enter your message : ")
-#now we can send to target
+	msg = input("please enter your message : ")
 	cipher_key=b'WDrevvK8ZrPn8gmiNFjcOp2xovBr40TCwJlZOyI94IY='
 	cipher = Fernet(cipher_key)
 	message = msg.encode()
 	encrypted = cipher.encrypt(message)
 	#new_msg = msg.encode('ascii')
-#message = b'the quick brown fox jumps over the lazy dog'
+	#message = b'the quick brown fox jumps over the lazy dog'
 	#encrypted_message = cipher.encrypt(message)
-	out_message=encrypted_message.decode()# turn it into a string to send
+	out_message=encrypted.decode()# turn it into a string to send
 	new_msg = out_message.encode('ascii')
-#print(new_msg)
-# we have to encode string to byte like object in python3 only
+	#print(new_msg)
+	# we have to encode string to byte like object in python3 only
 	s.sendto(new_msg,(target_ip,target_port))
 	print(s.recvfrom(100))
  
