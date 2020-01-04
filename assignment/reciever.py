@@ -9,12 +9,12 @@ s = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 s.bind((target_ip,target_port))
 while True:
    # time.sleep(1)
-	client_data = s.recvfrom(100)
+	client_data = s.recvfrom(1000)
 	print(client_data)
 	client_datas = client_data[0].decode('ascii')
 	client_datab = client_datas.encode() 
 	print(type(client_datab))
-	cipher_key =b'WDrevvK8ZrPn8gmiNFjcOp2xovBr40TCwJlZOyI94IY='
+	cipher_key =b'GzDqzcu4kz52ZOyu7haSaWY4t4mE2jzSKD4JuYfm7VE='
 	cipher = Fernet(cipher_key)
 	decrypted_message = cipher.decrypt(client_datab)   #decrypted_message = cipher.decrypt(encrypted_message)
 	print("\nreceived message =",str(decrypted_message.decode("ascii")))

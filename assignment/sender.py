@@ -11,7 +11,9 @@ s = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 while True:
 #this is for sender
 	msg = input("please enter your message : ")
-	cipher_key=b'WDrevvK8ZrPn8gmiNFjcOp2xovBr40TCwJlZOyI94IY='
+	cipher_key=b'GzDqzcu4kz52ZOyu7haSaWY4t4mE2jzSKD4JuYfm7VE='
+	#cipher_key = Fernet.generate_key()
+	#print(cipher_key)
 	cipher = Fernet(cipher_key)
 	message = msg.encode()
 	encrypted = cipher.encrypt(message)
