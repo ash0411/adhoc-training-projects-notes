@@ -10,10 +10,10 @@ s.bind((target_ip,target_port))
 while True:
    # time.sleep(1)
 	client_data = s.recvfrom(1000)
-	print(client_data)
+	#print(client_data)
 	client_datas = client_data[0].decode('ascii')
 	client_datab = client_datas.encode() 
-	print(type(client_datab))
+	#print(type(client_datab))
 	cipher_key =b'GzDqzcu4kz52ZOyu7haSaWY4t4mE2jzSKD4JuYfm7VE='
 	cipher = Fernet(cipher_key)
 	decrypted_message = cipher.decrypt(client_datab)   #decrypted_message = cipher.decrypt(encrypted_message)
@@ -23,7 +23,8 @@ while True:
 	audio1.runAndWait()
 	print(client_data)
 	print("now replying  to ",client_data[1][0])
-	s.sendto("hii guys thanks for the message ".encode('ascii'),client_data[1])
+	reply = input("enter the reply")
+	s.sendto(reply.encode('ascii'),client_data[1])
 	subprocess.getoutput("touch " + client_data[1][0] + ".txt")
 	with open(client_data[1][0]+".txt","a") as f:
 		f.write(client_data[0].decode('ascii'))
