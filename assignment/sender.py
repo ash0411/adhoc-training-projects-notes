@@ -31,7 +31,7 @@ while True:
 	#print(client_data_s)
 	#client_data_b = client_data_s.encode() # converting the message to bytes
 	print(client_data[0])
-	cipher = Fernet(cipher_key) # initailizing
+	cipher = Fernet(cipher_key) # initailize fernet object every time to decrypt
 	decrypted = cipher.decrypt(client_data[0]) # decryting the message
 	decrypted_message = decrypted.decode('ascii')
 	print(decrypted_message)
